@@ -38,11 +38,20 @@
 //PRÁTICA 3
 
 
-const anoDeNascimentoCliente = +prompt ("Qual ano voce nasceu?")
-const anoDeNascimentoAcompanhante = +prompt ("Qual ano seu acompanhante nasceu?")
-const anoMaiorDeIdade = 2005
+//const anoDeNascimentoCliente = +prompt ("Qual ano voce nasceu?")
+//const anoDeNascimentoAcompanhante = +prompt ("Qual ano seu acompanhante nasceu?")
+//const anoMaiorDeIdade = 2005
 
-console.log(anoDeNascimentoCliente <= anoMaiorDeIdade && anoDeNascimentoAcompanhante <= anoMaiorDeIdade) //ambos true
-console.log(anoDeNascimentoCliente <= anoMaiorDeIdade || anoDeNascimentoAcompanhante <= anoMaiorDeIdade) //apenas um true
-console.log(!(anoDeNascimentoCliente <= anoMaiorDeIdade))//retorna o oposto
-console.log(!(anoDeNascimentoAcompanhante <= anoMaiorDeIdade))//retorna o oposto
+//console.log(anoDeNascimentoCliente <= anoMaiorDeIdade && anoDeNascimentoAcompanhante <= anoMaiorDeIdade) //ambos true
+//console.log(anoDeNascimentoCliente <= anoMaiorDeIdade || anoDeNascimentoAcompanhante <= anoMaiorDeIdade) //apenas um true
+//console.log(!(anoDeNascimentoCliente <= anoMaiorDeIdade))//retorna o oposto
+//console.log(!(anoDeNascimentoAcompanhante <= anoMaiorDeIdade))//retorna o oposto
+
+
+// PRÁTICA EXTRA
+
+const idadeUsuario = +prompt ("Me informe sua idade, por favor")
+const idadeAmige = +prompt ("Agora me informe a idade da sua amizade mais próxima")
+const diferencaIdade = idadeUsuario - idadeAmige
+console.log("Sua idade é maior que a do seu amigo?", idadeUsuario > idadeAmige)
+console.log("E a diferença de idade de vocês é de:", diferencaIdade, "anos.")
